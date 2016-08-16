@@ -14,13 +14,23 @@
 #ifndef __RF24_CONFIG_H__
 #define __RF24_CONFIG_H__
 
-  /*** USER DEFINES:  ***/  
-  //#define FAILURE_HANDLING
+/*** USER DEFINES:  ***/
+//#define FAILURE_HANDLING
 #define SERIAL_DEBUG // for debbuging purpose
 //#define MINIMAL
 //#define SPI_UART  // Requires library from https://github.com/TMRh20/Sketches/tree/master/SPI_UART
 //#define SOFTSPI   // Requires library from https://github.com/greiman/DigitalIO
-  
+
+/*
+ * Remember DEBUG needs printf:
+ * into main:
+ *        #include <printf.h>
+ * then
+ * Serial.begin("whateverSpeed");
+ * printf_begin();
+ */
+
+
 /**********************/
 #define rf24_max(a,b) (a>b?a:b)
 #define rf24_min(a,b) (a<b?a:b)

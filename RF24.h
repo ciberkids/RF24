@@ -1802,10 +1802,21 @@ private:
  * |  6  |   MOSI   | rpi-mosi   |     (19)          |
  * |  7  |   MISO   | rpi-miso   |     (21)          |
  * |  8  |   IRQ    |    -       |       -           |
- *   
- *   
- *  
- *  
+ *
+ *
+ *  **DEBUG Options**
+ *
+ *  Remember DEBUG needs printf:
+ *    into main:
+ *    @code
+ *        #include <printf.h>
+ *    @endcode
+ *  then
+ *    @code
+ *    Serial.begin("whateverSpeed");
+ *    printf_begin();
+ *    @endcode
+ *
  * <br><br>
  ****************
  *   
