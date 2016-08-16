@@ -17,7 +17,7 @@
   #define rf24_min(a,b) (a<b?a:b)
 
   #include <Arduino.h>
-  #include <SPI.h>
+  #include "SPI.h"
 
   #define _BV(x) (1<<(x))
   #define _SPI SPI

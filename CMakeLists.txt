@@ -2,7 +2,8 @@
 
 
 generate_arduino_library(RF24Lib
-        BOARD nano
+        BOARD ${BOARD}
         SRCS RF24.cpp
-        HDRS utility/Due/RF24_arch_config.h RF24_config.h RF24.h
+        HDRS RF24_config.h RF24.h
+        LIBS SPILib
         )
