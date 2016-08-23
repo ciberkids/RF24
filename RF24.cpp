@@ -1098,7 +1098,7 @@ bool RF24::available(uint8_t* pipe_num)
 {
   if (!( read_register(FIFO_STATUS) & _BV(RX_EMPTY) )){
     #ifdef IF_SERIAL_DEBUG
-      Serial.println(F("RADIO AVAIABLE!!!!"));
+      //Serial.println(F("RADIO AVAIABLE!!!!"));
     #endif
     // If the caller wants the pipe number, include that
     if ( pipe_num ){
